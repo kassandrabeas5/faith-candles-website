@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  padding: 100px 40px;
+  text-align: center;
+  background: linear-gradient(to bottom, var(--cream) 0%, var(--warm-beige) 100%);
+  overflow: hidden;
+}
+
+.heroContent {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--deep-brown);
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.heroTagline {
+  font-size: 1.25rem;
+  color: var(--dark-sage);
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 16px 50px;
+  background-color: var(--dark-sage);
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid var(--dark-sage);
+  position: relative;
+  overflow: hidden;
+}

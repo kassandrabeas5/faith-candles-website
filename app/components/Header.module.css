@@ -1,0 +1,88 @@
+.promoBanner {
+  background: linear-gradient(135deg, var(--dark-sage), var(--deep-brown));
+  color: var(--cream);
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--cream);
+  padding: 30px 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--deep-brown);
+  text-transform: uppercase;
+}
+
+.navLinks {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navLinks a {
+  color: var(--deep-brown);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--soft-gold);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--soft-gold);
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.navIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.navIcons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--deep-brown);
+  transition: color 0.3s ease;
+}
+
+.navIcons button:hover {
+  color: var(--soft-gold);
+}
