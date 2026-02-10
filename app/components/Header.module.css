@@ -41,7 +41,7 @@
   list-style: none;
 }
 
-.navLinks a {
+.navLinks > li > a {
   color: var(--deep-brown);
   text-decoration: none;
   font-size: 1rem;
@@ -50,7 +50,7 @@
   transition: color 0.3s ease;
 }
 
-.navLinks a::after {
+.navLinks > li > a::after {
   content: '';
   position: absolute;
   bottom: -3px;
@@ -61,13 +61,98 @@
   transition: width 0.3s ease;
 }
 
-.navLinks a:hover {
+.navLinks > li > a:hover {
   color: var(--soft-gold);
 }
 
-.navLinks a:hover::after {
+.navLinks > li > a:hover::after {
   width: 100%;
 }
+
+/* Dropdown trigger */
+
+.hasDropdown {
+  position: relative;
+}
+
+/* Dropdown panel */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 18px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 200;
+  pointer-events: none;
+}
+
+.dropdownOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.dropdownCard {
+  position: relative;
+  background-color: var(--cream);
+  border: 1px solid var(--warm-beige);
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 24px 30px;
+  min-width: 200px;
+}
+
+.dropdownCard::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: var(--cream);
+  border-top: 1px solid var(--warm-beige);
+  border-left: 1px solid var(--warm-beige);
+}
+
+.dropdownHeading {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--soft-gold);
+  margin-bottom: 12px;
+}
+
+.dropdownList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownList li a {
+  display: block;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: var(--deep-brown);
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.dropdownList li a:hover,
+.dropdownList li a:focus-visible {
+  color: var(--soft-gold);
+  outline: none;
+}
+
+/* Nav icons */
 
 .navIcons {
   display: flex;
