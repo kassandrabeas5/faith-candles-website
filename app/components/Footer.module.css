@@ -1,0 +1,83 @@
+.footer {
+  background: linear-gradient(135deg, var(--deep-brown), var(--dark-sage));
+  color: var(--cream);
+  padding: 60px 40px 30px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.brandName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.columnTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links a {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.contact p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.bottom {
+  border-top: 1px solid rgba(245, 241, 232, 0.2);
+  padding-top: 25px;
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

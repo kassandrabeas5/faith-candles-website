@@ -1,0 +1,43 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: var(--soft-gold);
+  font-size: 1.1rem;
+}
+
+.starEmpty {
+  color: var(--warm-beige);
+  font-size: 1.1rem;
+}
+
+.halfStar {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.halfStar .filled {
+  color: var(--soft-gold);
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+}
+
+.halfStar .empty {
+  color: var(--warm-beige);
+}
+
+.count {
+  font-size: 0.85rem;
+  color: var(--dark-sage);
+  opacity: 0.8;
+}

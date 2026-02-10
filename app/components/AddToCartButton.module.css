@@ -1,0 +1,25 @@
+.addToCart {
+  display: block;
+  width: 100%;
+  padding: 16px 50px;
+  background-color: var(--dark-sage);
+  color: var(--cream);
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid var(--dark-sage);
+  cursor: pointer;
+}
+
+.addToCart:hover:not(:disabled) {
+  background-color: transparent;
+  color: var(--dark-sage);
+}
+
+.addToCart:disabled {
+  background-color: var(--soft-gold);
+  border-color: var(--soft-gold);
+  cursor: default;
+}

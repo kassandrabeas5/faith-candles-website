@@ -1,0 +1,42 @@
+.card {
+  display: block;
+  background-color: var(--cream);
+  border: 1px solid var(--warm-beige);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+  padding: 20px;
+}
+
+.category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--soft-gold);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.productName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--deep-brown);
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 1.05rem;
+  color: var(--deep-brown);
+  font-weight: 600;
+}

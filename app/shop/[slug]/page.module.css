@@ -1,0 +1,84 @@
+.productDetail {
+  padding: 60px 40px;
+  background-color: var(--cream);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.category {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--soft-gold);
+  margin-bottom: 10px;
+}
+
+.productName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--deep-brown);
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--warm-beige);
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--deep-brown);
+  font-weight: 600;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.description {
+  padding: 25px 0;
+  border-top: 1px solid var(--warm-beige);
+  line-height: 1.8;
+  color: var(--deep-brown);
+}
+
+.fulfillment {
+  padding: 20px 0;
+  border-top: 1px solid var(--warm-beige);
+}
+
+.fulfillmentItem {
+  font-size: 0.9rem;
+  color: var(--dark-sage);
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .twoColumn {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .productName {
+    font-size: 2rem;
+  }
+}

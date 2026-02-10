@@ -1,0 +1,41 @@
+.section {
+  padding: 80px 40px;
+  background-color: var(--warm-beige);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--deep-brown);
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+}
